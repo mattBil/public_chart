@@ -14,3 +14,10 @@ spec:
       containers:
         - name: {{ .Values.container_name }}
           image: {{ .Values.image }}
+          resources:
+            requests:
+                memory: {{ resource.requests.memory }}
+                cpu: {{ resource.requests.cpu }}
+            limits:
+                memory: {{ resource.limits.memory }}
+                cpu: {{ resource.limits.cpu }}
