@@ -16,8 +16,8 @@ spec:
           image: {{ .Values.image }}
           resources:
             requests:
-                memory: {{ .Values.resource.requests.memory }}
-                cpu: {{ .Values.resource.requests.cpu }}
+                memory: {{ .Values.resources.requests.memory }}
+                cpu: {{ .Values.resources.requests.cpu }}
             limits:
-                memory: {{ .Values.resource.limits.memory }}
-                cpu: {{ .Values.resource.limits.cpu }}
+                memory: {{ .Values.resources.limits.memory }}
+                cpu: {{ .Values.resources.limits.cpu }}
