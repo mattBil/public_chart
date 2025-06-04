@@ -10,3 +10,9 @@ resources:
   limits:
     memory: "256Mi"
     cpu: "500m"
+
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
