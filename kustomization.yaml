@@ -6,5 +6,5 @@ resources:
   # - base/helm-chart
   - base/
 
-patchesStrategicMerge:
+patches:
   - overlay/patches.yaml
