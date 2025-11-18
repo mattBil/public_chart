@@ -14,5 +14,10 @@ helmCharts:
   namespace: helm-vs-kust
   valuesFile: helm-chart/my-values.yaml
 
+images:
+  - name: nginx
+    newName: nginx
+    newTag: "trixie-perl"
+
 patches:
   - path: overlay/patches.yaml
