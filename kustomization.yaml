@@ -26,5 +26,6 @@ replicas:
   - name: cop
     count: 10
 
-# patches:
-#   - path: overlay/patches.yaml
+patches:
+  - path: overlay/dev/patches.yaml
+

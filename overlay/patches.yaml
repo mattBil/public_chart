@@ -1,6 +1,0 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: cop
-spec:
-  replicas: 4 # Example modification to change the number of replicas
