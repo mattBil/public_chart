@@ -22,5 +22,9 @@ images:
     newName: nginx
     newTag: "trixie-perl"
 
-patches:
-  - path: overlay/patches.yaml
+replicas:
+  - name: my-app
+    count: 10
+
+# patches:
+#   - path: overlay/patches.yaml
