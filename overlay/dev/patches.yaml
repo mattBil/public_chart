@@ -8,3 +8,5 @@ spec:
   ports:
   - name: http
     port: 8082
+    protocol: TCP
+    targetPort: 80
