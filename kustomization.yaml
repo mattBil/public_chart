@@ -26,6 +26,12 @@ replicas:
   - name: cop
     count: 10
 
-patchesStrategicMerge:
-  - path: overlay/dev/patches.yaml
-
+patches:
+  # - path: overlay/dev/patches.yaml
+  - target:
+      kind: Service
+      name: cop
+    patch: |
+      - op: replace
+        path: "/spec/ports/0/port"
+        value: 8081
