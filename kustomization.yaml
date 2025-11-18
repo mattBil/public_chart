@@ -14,6 +14,9 @@ helmCharts:
   namespace: helm-vs-kust
   valuesFile: helm-chart/my-values.yaml
 
+commonAnnotations:
+  owner: "admin@company.com"
+
 images:
   - name: nginx
     newName: nginx
