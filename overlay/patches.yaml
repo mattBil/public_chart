@@ -1,6 +1,5 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helm-vs-kust
-spec:
-  replicas: 3 # Example modification to change the number of replicas
+  name: cop
+  replicas: 4 # Example modification to change the number of replicas
