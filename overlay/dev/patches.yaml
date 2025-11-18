@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
+    app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: cop
   name: cop
 spec:
