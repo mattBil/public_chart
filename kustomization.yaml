@@ -23,7 +23,7 @@ images:
     newTag: "trixie-perl"
 
 replicas:
-  - name: my-app
+  - name: cop
     count: 10
 
 # patches:
