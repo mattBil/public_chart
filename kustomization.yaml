@@ -26,6 +26,6 @@ replicas:
   - name: cop
     count: 10
 
-patches:
+patchesStrategicMerge:
   - path: overlay/dev/patches.yaml
 
